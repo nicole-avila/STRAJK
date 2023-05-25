@@ -14,9 +14,9 @@ Herr Ägla är väldigt nöjd med appen men vill försäkra sig om att den är f
  - Felhantering: Om ett fält missas att fyllas i så ska en ruta dyka upp för att informera användaren att ett fält har missats att fyllas i.
  - Felhantering: Användare uppmanas att fylla i ett fält om samtliga fält INTE är i fyllda.
 
-Som användare vill jag kunna välja skostorlek för varje spelare så varje spelare får skor som passar.
+### Som användare vill jag kunna välja skostorlek för varje spelare så varje spelare får skor som passar.
 
-Som användare vill jag kunna ta bort ett fält för skostorlek om jag råkade klicka i ett för mycket så jag inte boka skor i onödan.
+##### Som användare vill jag kunna ta bort ett fält för skostorlek om jag råkade klicka i ett för mycket så jag inte boka skor i onödan.
 
 Som användare vill jag kunna skicka iväg min reservation och få tillbaka ett ett bokningsnummer och totalsumma så jag vet hur mycket jag ska betala. (120 kr / person + 100 kr / bana).
 
