@@ -1,6 +1,10 @@
 describe('template spec', () => {
-  it('passes', () => {
-    cy.visit('http://localhost:5173')
+  beforeEach( () => {
+    cy.visit('http://localhost:5173/confirmation')
+  })
+
+  it('test', () => {
+    cy.get('[name="time"]').type('18:00');
   })
 
 })

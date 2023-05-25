@@ -65,12 +65,13 @@ function Booking() {
             body: JSON.stringify(bookingInfo)
         });
         const data = await response.json();
-
+        console.log(data);
         return data;
     }
 
     function comparePeopleAndShoes() {
-        return (parseInt(booking.people) * parseInt(booking.lanes)) === shoes.length;
+        // return (parseInt(booking.people) * parseInt(booking.lanes)) === shoes.length;
+        return parseInt(booking.people) === shoes.length;
     }
 
     async function book() {
