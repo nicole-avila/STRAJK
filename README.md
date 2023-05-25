@@ -7,11 +7,10 @@ Herr Ägla är väldigt nöjd med appen men vill försäkra sig om att den är f
 
 ## User stories + Acceptanskriterier
 
-Som användare vill jag kunna boka datum och tid samt ange antal spelare så att jag kan reservera 1 eller flera baner i bowlinghallen.
+#### Som användare vill jag kunna boka datum och tid samt ange antal spelare så att jag kan reservera 1 eller flera baner i bowlinghallen.
  - Det ska finnas datum och tid i boknings sidan. 
  - Det ska finnas ett fält där man kan välja antal spelare och banor.
  - Man ska kunna göra en fullständig bokning.
- 
  - Felhantering: Om ett fält missas att fyllas i så ska en ruta dyka upp för att informera användaren att ett fält har missats att fyllas i.
  - Felhantering: Användare uppmanas att fylla i ett fält om samtliga fält INTE är i fyllda.
 
