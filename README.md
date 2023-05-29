@@ -13,7 +13,7 @@ Herr Ägla är väldigt nöjd med appen men vill försäkra sig om att den är f
  - Man ska kunna göra en fullständig bokning.
  - Felhantering: Om ett fält missas att fyllas i så ska en ruta dyka upp för att informera användaren att ett fält har missats att fyllas i.
  - Felhantering: Användare uppmanas att fylla i ett fält om samtliga fält INTE är i fyllda.
- - Felhantering: Det går att skriva in bokstäver i tid rutan. 
+ - Felhantering: Det ska inte vara möjligt att skriva bokstäver i tidsfältet. 
 
 ##### Som användare vill jag kunna välja skostorlek för varje spelare så varje spelare får skor som passar.
  - Det ska gå att lägga till skor, med en klickbar knapp.

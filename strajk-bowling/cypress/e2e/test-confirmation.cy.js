@@ -22,8 +22,8 @@ describe('Booking - adding shoes', () => {
 
   it('The price should agree with the number of players and courses (120sek/pp + 100sek/lane).', () => {
     cy.get('.confirmation__price > p').first().should('have.text', 'Total:')
-    // cy.get('.confirmation__price > p').last().should('sum', '120+120+100')
     cy.get('.confirmation__price > p').last().should('have.text', '340 sek')
+    // cy.get('.confirmation__price > p').last().should('sum', '120+120+100')
   })
 
   it('All input fields should be disabled.', () => {

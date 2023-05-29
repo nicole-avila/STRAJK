@@ -42,7 +42,7 @@ describe('Booking form', () => {
     cy.get('.error-message__text')
   })
 
-  // it('Users should be prompted to fill in a field if all fields are NOT filled in.', () => {
+  // it('Should not be able to write letters in the time field', () => {
 
   // })
 })

@@ -27,7 +27,7 @@ describe('Booking - adding shoes', () => {
     cy.visit('http://localhost:5173/confirmation').get('.top > h1').should('have.text', 'See you soon!')
   })
 
-  it('The booking should be deleted after clicking the confirmation button and navigating to the end page', () => {
+  it('The booking should be deleted after clicking the confirmation button and navigate to the "end page".', () => {
     //Booking
     cy.get('.booking-info__date').type('2023-06-01')
     cy.get('[name=time]').type('18:00')
