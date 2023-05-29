@@ -42,22 +42,7 @@ describe('Booking form', () => {
     cy.get('.error-message__text')
   })
 
-  it('Users should be prompted to fill in a field if all fields are NOT filled in.', () => {
+  // it('Users should be prompted to fill in a field if all fields are NOT filled in.', () => {
 
-  })
-
+  // })
 })
-
-describe('Booking - adding shoes', () => {
-  beforeEach( () => {
-    cy.visit('http://localhost:5173')
-    cy.viewport(1000, 1000)
-  })
-
-  it('Should be possible to add shoes, with a clickable button.', () => {
-
-
-  })
-
-
-  })
