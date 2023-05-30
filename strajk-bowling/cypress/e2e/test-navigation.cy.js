@@ -7,16 +7,19 @@ describe('Booking - adding shoes', () => {
   it('Should be able to navigate around the website.', () => {
     cy.get('.navigation__icon').click()
     cy.location('pathname').should('eq', '/' )
+    cy.wait(1000)
   })
 
   it('Should be able to navigate around the website.', () => {
     cy.get('.navigation__icon').click()
     cy.get('.navigation__link').eq(0).click()
+    cy.wait(1000)
     cy.location('pathname').should('eq', '/' )
   })
 
   it('Should be able to navigate around the website.', () => {
     cy.get('.navigation__icon').click()
+    cy.wait(1000)
     cy.get('.navigation__link').eq(1).click()
     cy.location('pathname').should('eq', '/confirmation' )
   })

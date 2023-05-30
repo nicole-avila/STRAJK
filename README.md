@@ -8,25 +8,32 @@ Herr Ägla är väldigt nöjd med appen men vill försäkra sig om att den är f
 ## User stories + Acceptanskriterier
 
 ##### Som användare vill jag kunna boka datum och tid samt ange antal spelare så att jag kan reservera 1 eller flera banor i bowlinghallen.
- - Det ska finnas datum och tid i boknings sidan. 
- - Det ska finnas ett fält där man kan välja antal spelare och banor.
- - Man ska kunna göra en fullständig bokning.
+ - Det bör finnas inmatningsfält på bokningssidan.
+ - Det bör finnas datum och tid i boknings sidan. 
+ - Det bör finnas ett fält där man kan välja antal spelare och banor.
+ - Man bör kunna göra en fullständig bokning.
+
  - Felhantering: Om ett fält missas att fyllas i så ska en ruta dyka upp för att informera användaren att ett fält har missats att fyllas i.
- - Felhantering: Användare uppmanas att fylla i ett fält om samtliga fält INTE är i fyllda.
- - Felhantering: Det ska inte vara möjligt att skriva bokstäver i tidsfältet. 
+ - Felhantering: Om användare missar att fylla i samtliga fält bör en Error Text visas för att informera användaren att fylla alla fält. 
+ - Felhantering: Bör visas ett feltextmeddelande om användaren missar att fylla i TIDsinmatningen.
+ - Felhantering: Bör visas ett feltextmeddelande om användaren missar att fylla i DATUMinmatningen. 
+ - Felhantering: Bör visas ett feltextmeddelande om användaren missar att fylla i ANTAL SPELARE.
+  - Felhantering: Bör visas ett feltextmeddelande om användaren missar att fylla i ANTAL BANOR.
+
 
 ##### Som användare vill jag kunna välja skostorlek för varje spelare så varje spelare får skor som passar.
  - Det ska gå att lägga till skor, med en klickbar knapp.
  - Det ska finnas ett fält för att kunna fylla i sko storlek.
  - Det ska vara möjligt att lägg till x antal skor med sko storlek.
-  - Felhantering: Användaren ska uppmanas när antal spelare och antal skor inte stämmer överens med varandra.
-- Felhantering: Om man missar skriva in skostrolek så följs det med tomma rutor med i 
-    bekrätfelsesidan. 
 
 
 ##### Som användare vill jag kunna ta bort ett fält för skostorlek om jag råkade klicka i ett för mycket så jag inte boka skor i onödan.
  - Vid varje fält ska det finnas en klickbar knapp för att ta bort fältet.
  - Det ska vara möjligt att ta bort x antal fält med skor man har lagt til.
+
+ - Felhantering: Det ska informeras till kunden när användaren missar att lägga till ett par skor.
+ - Felhantering: Det ska informeras till kunden när användaren lägger till en för mycket av ett par skor.
+ - Felhantering: Om kunden missar lägga till antal skor utefter antal spelare så ska det komma fram ett felmedelande medelande. 
 
 
 
@@ -34,8 +41,10 @@ Herr Ägla är väldigt nöjd med appen men vill försäkra sig om att den är f
  - Ska navigeras till en bekräftelsesida efter en bokning.
  - I bekräftelsesidan ska det finnas när, hur många och antal banor samt ett boknings nummer.
  - Priset bör stämma överens med antal spelare och banor.
- - I bekräftelsesidan ska samtliga input fält ska vara disabled.
- - Boknings fältet bör innehålla siffror och bokstäver.
+ - I bekräftelsesidan ska samtliga input fält ska ha värdet "disabled".
+ - Bokningsfältet ska innehålla siffror och bokstäver..
+
+
 
 ##### Som användare vill jag kunna navigera mellan boknings-och bekräftelsevyn.
  - Man ska kunna navigeras runt i webbsidan.

@@ -20,10 +20,9 @@ describe('Booking - adding shoes', () => {
     cy.get('.input > label').eq(3).should('have.text', 'Booking number')
   })
 
-  it('The price should agree with the number of players and courses (120sek/pp + 100sek/lane).', () => {
+  it('The price should agree with the number of players and lanes (120sek/pp + 100sek/lane).', () => {
     cy.get('.confirmation__price > p').first().should('have.text', 'Total:')
     cy.get('.confirmation__price > p').last().should('have.text', '340 sek')
-    // cy.get('.confirmation__price > p').last().should('sum', '120+120+100')
   })
 
   it('All input fields should be disabled.', () => {
@@ -32,8 +31,7 @@ describe('Booking - adding shoes', () => {
   })
 
   it('The booking field should contain numbers and letters.', () => {
-    cy.get('.confirmation__input').eq(3).should('have.attr', 'value' )
-    cy.get('.confirmation__input').eq(3).invoke('text').should('match', /^[0-9]*$/)     
-    // cy.get('.confirmation__input').eq(3).invoke('text').should('match', 'ABSDEFGHIJKLMNOPQRSTUVWXYZ') 
+    cy.get('.confirmation__input').eq(3).should('have.attr', 'value' )   
+    cy.get('.confirmation__input').eq(3).invoke('text').should('match', /^[0-9a-zA-Z]*$/)    
   })
 })
