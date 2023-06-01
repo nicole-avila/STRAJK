@@ -30,7 +30,7 @@ describe('Booking - adding shoes', () => {
     cy.visit('http://localhost:5174/confirmation').get('.top > h1').should('have.text', 'See you soon!')
   })
 
-  it('The booking should be deleted after clicking the confirmation button and navigate to the "end page".', () => {
+  it('The booking should show in the "All Bookings page" after clicking the confirmation button and navigate to the "/all-bookings page".', () => {
     //Booking
     cy.get('.booking-info__date').type('2023-06-01')
     cy.get('[name=time]').type('18:00')
@@ -50,7 +50,7 @@ describe('Booking - adding shoes', () => {
     cy.get('.confirmation__button').click()
 
     //End page
-    cy.location('pathname').should('eq', '/confirmation')
-    cy.get('.confirmation > h2 ').should('have.text', 'Inga bokning gjord!' )
+    cy.location('pathname').should('eq', '/all-bookings')
+    cy.get('.all-bookings').get('.top').should('have.text', 'Your Booking' )
   })
 })
