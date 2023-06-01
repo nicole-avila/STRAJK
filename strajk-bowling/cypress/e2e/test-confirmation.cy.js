@@ -1,6 +1,6 @@
 describe('Booking - adding shoes', () => {
   beforeEach( () => {
-    cy.visit('http://localhost:5173'), cy.viewport(1000, 1000)
+    cy.visit('http://localhost:5174'), cy.viewport(1000, 1000)
     cy.get('.booking-info__date').type('2023-06-01')
     cy.get('[name=time]').type('18:00')
     cy.get('.booking-info__who').type('2')

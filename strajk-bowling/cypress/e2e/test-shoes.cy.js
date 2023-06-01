@@ -1,6 +1,6 @@
 describe('Adding Shoes', () => {
   beforeEach( () => {
-    cy.visit('http://localhost:5173')
+    cy.visit('http://localhost:5174')
     cy.viewport(1000, 1000)
   })
 
@@ -24,7 +24,7 @@ describe('Adding Shoes', () => {
 
 describe('Removing Shoes', () => {
   beforeEach( () => {
-    cy.visit('http://localhost:5173')
+    cy.visit('http://localhost:5174')
     cy.viewport(1000, 1000)
   })
 
@@ -47,7 +47,7 @@ describe('Removing Shoes', () => {
 
 describe('Error Handling', () => {
   beforeEach( () => {
-    cy.visit('http://localhost:5173')
+    cy.visit('http://localhost:5174')
     cy.viewport(1000, 1000)
     cy.get('.booking-info__date').type('2023-06-01')
     cy.get('[name=time]').type('18:00')

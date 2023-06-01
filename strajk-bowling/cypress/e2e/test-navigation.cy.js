@@ -1,6 +1,6 @@
 describe('Booking - adding shoes', () => {
   beforeEach( () => {
-    cy.visit('http://localhost:5173')
+    cy.visit('http://localhost:5174')
     cy.viewport(1000, 1000)
   })
 
@@ -25,9 +25,9 @@ describe('Booking - adding shoes', () => {
   })
 
   it(' The URL should match the page the user is on.', () => {
-    cy.visit('http://localhost:5173').get('.top > h1').should('have.text', 'Booking' )
+    cy.visit('http://localhost:5174').get('.top > h1').should('have.text', 'Booking' )
     cy.wait(2000)
-    cy.visit('http://localhost:5173/confirmation').get('.top > h1').should('have.text', 'See you soon!')
+    cy.visit('http://localhost:5174/confirmation').get('.top > h1').should('have.text', 'See you soon!')
   })
 
   it('The booking should be deleted after clicking the confirmation button and navigate to the "end page".', () => {

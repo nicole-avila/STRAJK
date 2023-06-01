@@ -1,6 +1,6 @@
 describe('Booking form', () => {
   beforeEach( () => {
-    cy.visit('http://localhost:5173')
+    cy.visit('http://localhost:5174')
     cy.viewport(1000, 1000)
   })
 
@@ -46,7 +46,7 @@ describe('Booking form', () => {
 
   describe('Error Handling', () => {
     beforeEach( () => {
-      cy.visit('http://localhost:5173')
+      cy.visit('http://localhost:5174')
       cy.viewport(1000, 1000)
     })
   
