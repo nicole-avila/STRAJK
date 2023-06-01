@@ -1,0 +1,96 @@
+@import '../scss/variables';
+
+.top {
+    margin-bottom: 0;
+}
+
+.all-bookings {
+    display: flex;
+    flex-direction: column;
+
+    &__booking {
+        flex-direction: column;
+        border: 1px solid $primary-blue;
+        border-radius: $border-radius;
+        padding: 0 .5rem 0 .5rem;
+        margin: 1rem .2rem;
+        justify-content: center;
+    }
+
+    &__bookings-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__aside {
+        width: 400px;
+        display: flex;
+        gap: .5rem;
+        overflow: scroll;
+        scroll-behavior: smooth;
+        scrollbar-color: hotpink;
+    }
+    
+    & button {
+        font-family: 'Work Sans';
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        border: .5px solid $primary-blue;
+        background: none;
+        margin: 0 0 .5rem 0;
+        float: right;
+        cursor: pointer;
+    }
+
+    & button:hover {
+        background: #ec315a21;
+        color: #EC315A;
+        border: .5px solid #EC315A;
+    }
+
+    & button:active {
+        background:  #EC315A;
+        box-shadow: 0 5px #ec315a21;
+        transform: translateY(.6px);
+    }
+
+    & p {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column; 
+    } 
+
+    &__input {
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        font-family: 'Bebas Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 72px;
+        letter-spacing: 0.03em;
+        color: $primary-red;
+        margin: 2rem 0 0 0;
+        align-self: center;
+    }
+
+    &__no-booking {
+        font-family: 'Bebas Neue';
+        align-self: center;
+        margin: 1rem 0 8rem 0;
+    }
+}  

@@ -15,6 +15,8 @@ function Navigation() {
             onClick={ () => { navigate('/') }}>Booking</a>
             <a href="#" className={ `navigation__link ${ showMenu ? '' : 'hide' }` } 
             onClick={ () => { navigate('/confirmation') }}>Confirmation</a>
+            <a href="#" className={ `navigation__link ${ showMenu ? '' : 'hide' }` } 
+            onClick={ () => { navigate('/all-bookings') }}>All Bookings</a>
         </nav>
     )
 }
