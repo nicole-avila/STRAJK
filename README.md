@@ -49,4 +49,4 @@ Herr Ägla är väldigt nöjd med appen men vill försäkra sig om att den är f
 ##### Som användare vill jag kunna navigera mellan boknings-och bekräftelsevyn.
  - Man ska kunna navigeras runt i webbsidan.
  - URL:en ska stämma överens med vilken sidan användaren befinner sig i.
- - Bokningen bör tas bort efter att man klickat på bekräftelseknappen och navigeras till slut-sidan.
+ - Bokningen bör visas på "All Bookings-page" efter att kunden har klickat på bekräftelseknappen och ska navigeras till "/all-bookings" sidan.
