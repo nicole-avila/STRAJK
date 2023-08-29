@@ -1,4 +1,4 @@
-# Strajk bowling
+# Strajk bowling - CypressTest
 
 ## Bakgrund
 
